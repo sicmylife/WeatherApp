@@ -22,7 +22,10 @@ async function loadInfo(city = "london") {
       `http://api.weatherapi.com/v1/current.json?key=9afe2505103b45da9f3120812221611&q=${city}&aqi=no`
     ).then((res)=> res.json())
     .then((data) =>{
-      setWeather(data);
+      setTimeout(()=>{
+        setWeather(data);
+
+      },1000)
       console.log(data);
     })
 }
@@ -35,7 +38,7 @@ async function loadInfo(city = "london") {
   return (
     <div className={styles.weatherContainer}>
 <WeatherForm   onChangeCity={handleChangeCity}/>
-{weather ? <WeatherMainInfo weather={weather}/> : <Loading /> }
+{weather ? <WeatherMainInfo weather={weather}/> : <Loading />}
 
     </div>
   )
