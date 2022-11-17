@@ -19,7 +19,7 @@ const WeatherApp = () => {
 
 async function loadInfo(city = "london") {
     await fetch(
-      `http://api.weatherapi.com/v1/current.json?key=9afe2505103b45da9f3120812221611&q=${city}&aqi=no`
+      `https://api.weatherapi.com/v1/current.json?key=9afe2505103b45da9f3120812221611&q=${city}&aqi=no`
     ).then((res)=> res.json())
     .then((data) =>{
       setTimeout(()=>{
