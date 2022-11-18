@@ -1,9 +1,11 @@
 .mainInfo {
-    background-color: white;
+    background-color: #aeacde;
+  background: radial-gradient(95.47% 71.89% at 93.07% 74.31%, rgba(69, 39, 139, 0.9) 0%, rgba(46, 51, 90, 0.9) 100%);
+
     padding: 40px;
     border-radius: 5px;
     box-sizing: border-box;
-    color: rgb(69, 69, 69);
+    color:#e5e1fa;
   }
   
   .city {
@@ -27,9 +29,17 @@
   .condition {
     font-size: 24px;
     padding-bottom: 1rem;
+    padding-top: 1rem;
   }
   
   .current {
     font-size: 38px;
     font-weight: bold;
+    padding-bottom: 1rem;
+  }
+
+  .currentfeelslike {
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 1rem;
   }

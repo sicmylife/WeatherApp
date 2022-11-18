@@ -45,3 +45,11 @@
       transform: rotate(358deg);
     }
   }
+
+  @media (max-width: 567px) {
+    .loadingContainer {
+      width: 330px;
+      height: 330px;
+      background: radial-gradient(95.47% 71.89% at 93.07% 74.31%, rgba(69, 39, 139, 0.9) 0%, rgba(46, 51, 90, 0.9) 100%)
+    }
+  }

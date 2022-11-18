@@ -17,7 +17,7 @@ const WeatherApp = () => {
      document.title = `Weather => ${weather?.location.name ?? ""}`
   },[weather]);
 
-async function loadInfo(city = "london") {
+async function loadInfo(city = "poznan") {
     await fetch(
       `https://api.weatherapi.com/v1/current.json?key=9afe2505103b45da9f3120812221611&q=${city}&aqi=no`
     ).then((res)=> res.json())

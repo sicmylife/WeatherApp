@@ -5,6 +5,9 @@
   text-align: center;
 }
 
-.yo{
-  margin-top: 210px;
+
+
+@media (max-width: 767px) {
+
+
 }
