@@ -22,7 +22,7 @@ const WeatherForm = ({ onChangeCity}) => {
   return (
     <div>
         <form onSubmit={handleSubmit} className={styles.container}>
-            <input type="text" onChange={onChange} className={styles.input} />
+            <input type="text" onChange={onChange} className={styles.input} placeholder='City' />
         </form>
     </div>
   )
