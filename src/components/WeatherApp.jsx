@@ -14,12 +14,13 @@ const WeatherApp = () => {
     },[]);
 
     useEffect(()=>{
-     document.title = `Weather => ${weather?.location.name ?? ""}`
+     document.title = `Weather => ${weather?.name ?? ""}`
   },[weather]);
 
 async function loadInfo(city = "poznan") {
     await fetch(
-      `https://api.weatherapi.com/v1/current.json?key=9afe2505103b45da9f3120812221611&q=${city}&aqi=no`
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=88cb196bef03f1d8cd1cf5edda17621d`
+
     ).then((res)=> res.json())
     .then((data) =>{
       setTimeout(()=>{
@@ -29,6 +30,9 @@ async function loadInfo(city = "poznan") {
       console.log(data);
     })
 }
+
+console.log(weather);
+
 
 
     function handleChangeCity(city) {
